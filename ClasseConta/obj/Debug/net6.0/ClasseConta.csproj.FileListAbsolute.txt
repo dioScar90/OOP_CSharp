@@ -1,0 +1,15 @@
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\bin\Debug\net6.0\ClasseConta.exe
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\bin\Debug\net6.0\ClasseConta.deps.json
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\bin\Debug\net6.0\ClasseConta.runtimeconfig.json
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\bin\Debug\net6.0\ClasseConta.dll
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\bin\Debug\net6.0\ClasseConta.pdb
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.AssemblyInfo.cs
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.dll
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\refint\ClasseConta.dll
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.pdb
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ClasseConta.genruntimeconfig.cache
+C:\Users\Aluno\Documents\poo\POO noite\ClasseConta\obj\Debug\net6.0\ref\ClasseConta.dll
