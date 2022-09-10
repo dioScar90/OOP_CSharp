@@ -1,0 +1,15 @@
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ConstrutorConta
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ConstrutorConta.deps.json
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ConstrutorConta.runtimeconfig.json
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ConstrutorConta.dll
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ref/ConstrutorConta.dll
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/bin/Debug/net6.0/ConstrutorConta.pdb
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.csproj.AssemblyReference.cache
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.GeneratedMSBuildEditorConfig.editorconfig
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.AssemblyInfoInputs.cache
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.AssemblyInfo.cs
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.csproj.CoreCompileInputs.cache
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.dll
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ref/ConstrutorConta.dll
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.pdb
+/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/Debug/net6.0/ConstrutorConta.genruntimeconfig.cache

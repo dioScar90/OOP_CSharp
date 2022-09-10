@@ -1,0 +1,15 @@
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.csproj.AssemblyReference.cache
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.AssemblyInfoInputs.cache
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.AssemblyInfo.cs
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.csproj.CoreCompileInputs.cache
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\bin\Debug\net6.0\EncapsulamentoFuncionario.exe
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\bin\Debug\net6.0\EncapsulamentoFuncionario.deps.json
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\bin\Debug\net6.0\EncapsulamentoFuncionario.runtimeconfig.json
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\bin\Debug\net6.0\EncapsulamentoFuncionario.dll
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\bin\Debug\net6.0\EncapsulamentoFuncionario.pdb
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.dll
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\refint\EncapsulamentoFuncionario.dll
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.pdb
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\EncapsulamentoFuncionario.genruntimeconfig.cache
+C:\Users\leidi\OneDrive - Fatec Centro Paula Souza\FATEC\4º Módulo\05 - POO\1º Bimestre\POO noite\EncapsulamentoFuncionario\obj\Debug\net6.0\ref\EncapsulamentoFuncionario.dll
