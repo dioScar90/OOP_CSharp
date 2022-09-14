@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/ConstrutorConta.csproj": {}
+    "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\ConstrutorConta\\ConstrutorConta.csproj": {}
   },
   "projects": {
-    "/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/ConstrutorConta.csproj": {
+    "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\ConstrutorConta\\ConstrutorConta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/ConstrutorConta.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\ConstrutorConta\\ConstrutorConta.csproj",
         "projectName": "ConstrutorConta",
-        "projectPath": "/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/ConstrutorConta.csproj",
-        "packagesPath": "/home/diogo/.nuget/packages/",
-        "outputPath": "/home/diogo/Documentos/OOP_CSharp/ConstrutorConta/obj/",
+        "projectPath": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\ConstrutorConta\\ConstrutorConta.csproj",
+        "packagesPath": "C:\\Users\\diogo.scarmagnani\\.nuget\\packages\\",
+        "outputPath": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\ConstrutorConta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/diogo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\diogo.scarmagnani\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.108/sdk/6.0.108/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
