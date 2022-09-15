@@ -1,6 +1,6 @@
 using System;
 
-namespace OOP_Teste.ArrayFuncionario
+namespace OOP_CSharp.ArrayFuncionario
 {
     public class Funcionario
     {

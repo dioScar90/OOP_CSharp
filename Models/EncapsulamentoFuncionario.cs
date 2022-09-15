@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OOP_Teste.EncapsulamentoFuncionario
+namespace OOP_CSharp.EncapsulamentoFuncionario
 {
     public class Funcionario
     {

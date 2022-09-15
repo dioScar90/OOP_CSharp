@@ -1,6 +1,6 @@
 using System;
 
-namespace OOP_Teste.ArrayProduto
+namespace OOP_CSharp.ArrayProduto
 {
     public class Produto
     {

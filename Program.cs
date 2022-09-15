@@ -1,10 +1,10 @@
-﻿using OOP_Teste.ArrayFuncionario;
-// using OOP_Teste.ArrayProduto;
-// using OOP_Teste.ClasseConta;
-// using OOP_Teste.ClasseFuncionario;
-// using OOP_Teste.ConstrutorConta;
-// using OOP_Teste.EncapsulamentoConta;
-// using OOP_Teste.EncapsulamentoFuncionario;
+﻿using OOP_CSharp.ArrayFuncionario;
+// using OOP_CSharp.ArrayProduto;
+// using OOP_CSharp.ClasseConta;
+// using OOP_CSharp.ClasseFuncionario;
+// using OOP_CSharp.ConstrutorConta;
+// using OOP_CSharp.EncapsulamentoConta;
+// using OOP_CSharp.EncapsulamentoFuncionario;
 
 // ArrayFuncionario
 Console.WriteLine("--- EXEMPLO COM VETOR ---");

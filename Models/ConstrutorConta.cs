@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OOP_Teste.ConstrutorConta
+namespace OOP_CSharp.ConstrutorConta
 {
     public class Conta
     {

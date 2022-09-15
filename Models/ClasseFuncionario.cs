@@ -1,6 +1,6 @@
 using System;
 
-namespace OOP_Teste.ClasseFuncionario
+namespace OOP_CSharp.ClasseFuncionario
 {
     public class Funcionario
     {

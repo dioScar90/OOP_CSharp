@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OOP_Teste.EncapsulamentoConta
+namespace OOP_CSharp.EncapsulamentoConta
 {
     public class Conta
     {
