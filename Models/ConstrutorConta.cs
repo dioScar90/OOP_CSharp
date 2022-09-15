@@ -9,7 +9,7 @@ namespace OOP_CSharp.ConstrutorConta
     {
         public int Numero { get; set; }
         public string Titular { get; set; }
-        public double Saldo { get; set; }
+        public decimal Saldo { get; set; }
         public Conta() // Método construtor -> NUNCA usar return dentro de um método construtor.
         {
 
@@ -23,7 +23,7 @@ namespace OOP_CSharp.ConstrutorConta
             this.Numero = numero;
             this.Titular = titular;
         }
-        public Conta(int numero, string titular, double saldo)
+        public Conta(int numero, string titular, decimal saldo)
         {
             this.Numero = numero;
             this.Titular = titular;

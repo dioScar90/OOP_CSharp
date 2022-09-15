@@ -1,35 +1,35 @@
-﻿using OOP_CSharp.ArrayFuncionario;
+﻿// using OOP_CSharp.ArrayFuncionario;
 // using OOP_CSharp.ArrayProduto;
 // using OOP_CSharp.ClasseConta;
 // using OOP_CSharp.ClasseFuncionario;
-// using OOP_CSharp.ConstrutorConta;
+using OOP_CSharp.ConstrutorConta;
 // using OOP_CSharp.EncapsulamentoConta;
 // using OOP_CSharp.EncapsulamentoFuncionario;
 
-// ArrayFuncionario
-Console.WriteLine("--- EXEMPLO COM VETOR ---");
+// // ArrayFuncionario
+// Console.WriteLine("--- EXEMPLO COM VETOR ---");
 
-// Funcionario f1 = new Funcionario();
-// Funcionario f2 = new Funcionario();
-// Funcionario f3 = new Funcionario();
-// Funcionario f4 = new Funcionario();
-// Funcionario f5 = new Funcionario();
-// É inviável trabalhar instanciando diversos objetos. Solução: usar vetor.
+// // Funcionario f1 = new Funcionario();
+// // Funcionario f2 = new Funcionario();
+// // Funcionario f3 = new Funcionario();
+// // Funcionario f4 = new Funcionario();
+// // Funcionario f5 = new Funcionario();
+// // É inviável trabalhar instanciando diversos objetos. Solução: usar vetor.
 
-Funcionario[] vetF = new Funcionario[3];
-for (int i = 0; i < vetF.Length; i++) {
-    // Instancia cada índice do vetor.
-    vetF[i] = new Funcionario();
-    Console.Write("Informe o código: ");
-    vetF[i].codigo = int.Parse(Console.ReadLine());
-    Console.Write("Informe o nome: ");
-    vetF[i].nome = Console.ReadLine();
-    Console.Write("Informe o salário: ");
-    vetF[i].salario = Convert.ToDouble(Console.ReadLine());
-}
-for (int i = 0; i < vetF.Length; i++) {
-    vetF[i].MostrarAtributos();
-}
+// Funcionario[] vetF = new Funcionario[3];
+// for (int i = 0; i < vetF.Length; i++) {
+//     // Instancia cada índice do vetor.
+//     vetF[i] = new Funcionario();
+//     Console.Write("Informe o código: ");
+//     vetF[i].codigo = int.Parse(Console.ReadLine());
+//     Console.Write("Informe o nome: ");
+//     vetF[i].nome = Console.ReadLine();
+//     Console.Write("Informe o salário: ");
+//     vetF[i].salario = Convert.ToDouble(Console.ReadLine());
+// }
+// for (int i = 0; i < vetF.Length; i++) {
+//     vetF[i].MostrarAtributos();
+// }
 
 // ************************************************************************************
 
@@ -99,22 +99,26 @@ for (int i = 0; i < vetF.Length; i++) {
 
 // ************************************************************************************
 
-// // ConstrutorConta
-// // Construtor padrão, sem parâmetros.
-// Conta c1 = new Conta();
-// c1.MostrarDados();
+// ConstrutorConta
+// Construtor padrão, sem parâmetros.
+var c1 = new Conta{
+    Numero = 25,
+    Titular = "Brabo",
+    Saldo = 1000.00M
+};
+c1.MostrarDados();
 
-// // 2º construtor, com 1 parâmetro.
-// Conta c2 = new Conta(10);
-// c2.MostrarDados();
+// 2º construtor, com 1 parâmetro.
+Conta c2 = new(10);
+c2.MostrarDados();
 
-// // 3º construtor, com 2 parâmetros.
-// Conta c3 = new Conta(11, "Ana");
-// c3.MostrarDados();
+// 3º construtor, com 2 parâmetros.
+Conta c3 = new(11, "Ana");
+c3.MostrarDados();
 
-// // 4º construtor, com 3 parâmetros.
-// Conta c4 = new Conta(12, "Bia", 100);
-// c4.MostrarDados();
+// 4º construtor, com 3 parâmetros.
+Conta c4 = new(12, "Bia", 100.00M);
+c4.MostrarDados();
 
 // ************************************************************************************
 
