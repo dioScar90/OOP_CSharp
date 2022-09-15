@@ -1,8 +1,0 @@
-Quando instanciar o objeto prestar atenção na chavinha (chave Inglesa) que chamamos de propriedade
-
-f1.Salario = f1.Salario + f1.Salario * 10/100;
-SET(ocorre alteração)
-
-f1.Salario + f1.Salario * 10/100;
-    get          get
-
