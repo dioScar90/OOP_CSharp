@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z2O4IohlRcKEk+zs+ieO+3VIOltvmQwKKTCjaTbdCwtHfSmgptI0Mc0DclYol5EYbzY7TQCZF/s9i9izMf1zCQ==",
+  "dgSpecHash": "H4PsyqvLK0pPUuOwq63mSmVPyIEHakfPOkwqNV+8hw6efQEi2EjJhdXqBX/EXiGsrz3FUtr5KutoIfP+W8Juow==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\OOP_Teste.csproj",
+  "projectFilePath": "/home/diogo/Documents/OOP_CSharp/OOP_Teste.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

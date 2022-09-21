@@ -2,7 +2,8 @@
 // using OOP_CSharp.ArrayProduto;
 // using OOP_CSharp.ClasseConta;
 // using OOP_CSharp.ClasseFuncionario;
-using OOP_CSharp.ConstrutorConta;
+// using OOP_CSharp.ConstrutorConta;
+using OOP_CSharp.ConstrutorFuncionario;
 // using OOP_CSharp.EncapsulamentoConta;
 // using OOP_CSharp.EncapsulamentoFuncionario;
 
@@ -99,26 +100,32 @@ using OOP_CSharp.ConstrutorConta;
 
 // ************************************************************************************
 
-// ConstrutorConta
-// Construtor padrão, sem parâmetros.
-var c1 = new Conta{
-    Numero = 25,
-    Titular = "Brabo",
-    Saldo = 1000.00M
-};
-c1.MostrarDados();
+// // ConstrutorConta
+// // Construtor padrão, sem parâmetros.
+// var c1 = new Conta{
+//     Numero = 25,
+//     Titular = "Brabo",
+//     Saldo = 1000.00M
+// };
+// c1.MostrarDados();
 
-// 2º construtor, com 1 parâmetro.
-Conta c2 = new(10);
-c2.MostrarDados();
+// // 2º construtor, com 1 parâmetro.
+// Conta c2 = new(10);
+// c2.MostrarDados();
 
-// 3º construtor, com 2 parâmetros.
-Conta c3 = new(11, "Ana");
-c3.MostrarDados();
+// // 3º construtor, com 2 parâmetros.
+// Conta c3 = new(11, "Ana");
+// c3.MostrarDados();
 
-// 4º construtor, com 3 parâmetros.
-Conta c4 = new(12, "Bia", 100.00M);
-c4.MostrarDados();
+// // 4º construtor, com 3 parâmetros.
+// Conta c4 = new(12, "Bia", 100.00M);
+// c4.MostrarDados();
+
+// Console.WriteLine($"Quantidade de instâncias: {Conta.Contador}");
+
+// ************************************************************************************
+
+
 
 // ************************************************************************************
 
