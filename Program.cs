@@ -125,7 +125,15 @@ using OOP_CSharp.ConstrutorFuncionario;
 
 // ************************************************************************************
 
+// ConstrutorFuncionario
+Funcionario f1 = new(123, "diogo DE liMA", 1230.00M);
+// var f1 = new Funcionario{
+//     Codigo = -1,
+//     Nome = "diogo DE liMA",
+//     Salario = 1230
+// };
 
+f1.MostrarDados();
 
 // ************************************************************************************
 
