@@ -54,7 +54,7 @@ namespace OOP_CSharp.ConstrutorFuncionario
 
             foreach(var item in arrStr)
             {
-                if (item.ToLower() == "de" || item.ToLower() == "da" || item.ToLower() == "do" || item.ToLower() == "dos" || item.ToLower() == "das")
+                if (new[] {"de", "da", "do", "dos", "das", "e"}.Contains(item.ToLower()))
                     newStr += item.ToLower();
                 else
                     newStr += char.ToUpper(item[0]) + item.Substring(1).ToLower();
