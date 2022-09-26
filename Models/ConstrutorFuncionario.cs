@@ -11,41 +11,52 @@ namespace OOP_CSharp.ConstrutorFuncionario
         // Declarar atributos e métodos com o encapsulamento
         // completo (propfull), validando a digitação do usuário e na
         // apresentação do atributo nome, mostrar em maiúsculo.
-        private int codigo;
-        private string nome;
-        private decimal salario;
+
+        public Funcionario()
+        {
+            
+        }
+        public Funcionario(int codigo, string nome, decimal salario)
+        {
+            Codigo = codigo;
+            Nome = nome;
+            Salario = salario;
+        }
+
+        private int _codigo;
+        private string _nome;
+        private decimal _salario;
 
         public int Codigo
         {
-            get => codigo;
+            get => _codigo;
             set {
-                if (value > 0)
-                    codigo = value;
-                else
-                    Console.WriteLine("Código inválido!");
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Código inválido!");
+                }
+
+                _codigo = value;
             }
         }
         public string Nome
         {
-            get => nome;
+            get => _nome;
             set {
                 if (string.IsNullOrWhiteSpace(value))
+                {
                     throw new ArgumentException("O nome não pode estar vazio!");
-                else
-                    nome = ToUpperFirst(value);
+                }
+                
+                _nome = ToUpperFirst(value);
             }
         }
         public decimal Salario
         {
-            get => salario;
-            set => salario = value;
+            get => _salario;
+            set => _salario = value;
         }
-        public Funcionario(int codigo, string nome, decimal salario)
-        {
-            this.Codigo = codigo;
-            this.Nome = nome;
-            this.Salario = salario;
-        }
+        
 
         private string ToUpperFirst(string name)
         {
