@@ -6,6 +6,9 @@
 using OOP_CSharp.ConstrutorFuncionario;
 // using OOP_CSharp.EncapsulamentoConta;
 // using OOP_CSharp.EncapsulamentoFuncionario;
+using System.Globalization;
+
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // // ArrayFuncionario
 // Console.WriteLine("--- EXEMPLO COM VETOR ---");

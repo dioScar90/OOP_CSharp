@@ -70,24 +70,26 @@ namespace OOP_CSharp.ConstrutorFuncionario
                 else
                     newStr += char.ToUpper(item[0]) + item.Substring(1).ToLower();
 
-                if (arrStr.Last() != item)
-                    newStr += " ";
+                newStr += arrStr.Last() == item ? "" : ' ';
             }
 
             return newStr;
         }
 
-        private string MoneyFormated(decimal number)
-        {
-            return String.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:N2}", number);
-        }
+        // private string MoneyFormated(decimal number)
+        // {
+        //     return String.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C2}", number);
+        //     // ou...
+        //     return number.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"));
+        // }
 
         public void MostrarDados()
         {
             Console.WriteLine("" + 
-                "Código: " + Codigo +
-                "\tNome: " + Nome +
-                "\tSalário: R$ " + MoneyFormated(Salario));
+                $"Código: {Codigo}" +
+                $"\tNome: {Nome}" +
+                // "\tSalário: " + MoneyFormated(Salario));
+                $"\tSalário: {Salario:C}");
         }
     }
 }
