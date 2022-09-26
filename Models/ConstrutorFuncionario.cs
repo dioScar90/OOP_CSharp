@@ -48,7 +48,7 @@ namespace OOP_CSharp.ConstrutorFuncionario
                     throw new ArgumentException("O nome não pode estar vazio!");
                 }
                 
-                _nome = ToUpperFirst(value);
+                _nome = ToUpperFirst(value.Trim());
             }
         }
         public decimal Salario
@@ -85,9 +85,9 @@ namespace OOP_CSharp.ConstrutorFuncionario
         public void MostrarDados()
         {
             Console.WriteLine("" + 
-                "Código do funcionário: " + Codigo +
+                "Código: " + Codigo +
                 "\tNome: " + Nome +
-                "\tSalário: R$ " + MoneyFormated(Salario) + ".");
+                "\tSalário: R$ " + MoneyFormated(Salario));
         }
     }
 }

@@ -126,7 +126,7 @@ using OOP_CSharp.ConstrutorFuncionario;
 // ************************************************************************************
 
 // ConstrutorFuncionario
-Funcionario f1 = new(12, "diogo DE liMA", 1230.00M);
+Funcionario f1 = new(12, "diogo DE liMA SCARMAGNANI", 1230.00M);
 // var f1 = new Funcionario{
 //     Codigo = 12,
 //     Nome = "diogo DE liMA",
