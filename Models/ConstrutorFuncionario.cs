@@ -12,32 +12,29 @@ namespace OOP_CSharp.ConstrutorFuncionario
         // completo (propfull), validando a digitação do usuário e na
         // apresentação do atributo nome, mostrar em maiúsculo.
 
+        // static Funcionario()
+        // {
+        //     Codigo = 100;
+        // }
         public Funcionario()
         {
-            
+            Codigo = Codigo;
         }
-        public Funcionario(int codigo, string nome, decimal salario)
+        public Funcionario(string nome, decimal salario)
         {
-            Codigo = codigo;
+            Codigo = Codigo;
             Nome = nome;
             Salario = salario;
         }
 
-        private int _codigo;
+        private static int s_codigo = 100;
         private string _nome;
         private decimal _salario;
 
-        public int Codigo
+        public static int Codigo
         {
-            get => _codigo;
-            set {
-                if (value <= 0)
-                {
-                    throw new ArgumentException("Código inválido!");
-                }
-
-                _codigo = value;
-            }
+            get => s_codigo;
+            private set { s_codigo++; }
         }
         public string Nome
         {

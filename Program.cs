@@ -129,14 +129,23 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ************************************************************************************
 
 // ConstrutorFuncionario
-Funcionario f1 = new(12, "diogo DE liMA SCARMAGNANI", 1230.00M);
-// var f1 = new Funcionario{
-//     Codigo = 12,
-//     Nome = "diogo DE liMA",
-//     Salario = 1230.00M
-// };
+// Funcionario f1 = new("diogo DE liMA SCARMAGNANI", 1230.00M);
+var f1 = new Funcionario{
+    Nome = "diogo DE liMA",
+    Salario = 1230.00M
+};
+var f2 = new Funcionario{
+    Nome = "diogo DE liMA",
+    Salario = 1230.00M
+};
+var f3 = new Funcionario{
+    Nome = "diogo DE liMA",
+    Salario = 1230.00M
+};
 
 f1.MostrarDados();
+f2.MostrarDados();
+f3.MostrarDados();
 
 // ************************************************************************************
 
