@@ -66,12 +66,17 @@ namespace OOP_CSharp.ConstrutorFuncionario
             return newStr;
         }
 
+        private string MoneyFormated(decimal number)
+        {
+            return String.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:N2}", number);
+        }
+
         public void MostrarDados()
         {
             Console.WriteLine("" + 
                 "Código do funcionário: " + Codigo +
                 "\tNome: " + Nome +
-                "\tSalário: R$ " + String.Format("{0:N}", Salario));
+                "\tSalário: R$ " + MoneyFormated(Salario) + ".");
         }
     }
 }
