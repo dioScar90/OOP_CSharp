@@ -29,10 +29,10 @@ namespace OOP_CSharp.ConstrutorFuncionario
         {
             get => nome;
             set {
-                if (nome != "")
-                    nome = ToUpperFirst(value);
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("O nome não pode estar vazio!");
                 else
-                    Console.WriteLine("O nome não pode estar vazio!");
+                    nome = ToUpperFirst(value);
             }
         }
         public decimal Salario
