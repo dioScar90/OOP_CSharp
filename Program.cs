@@ -8,6 +8,7 @@ using OOP_CSharp.ConstrutorFuncionario;
 // using OOP_CSharp.EncapsulamentoFuncionario;
 using System.Globalization;
 
+// Definindo a cultura local do Brasil. Útil no momento de formatar a moeda.
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // // ArrayFuncionario
@@ -126,29 +127,44 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // Console.WriteLine($"Quantidade de instâncias: {Conta.Contador}");
 
-// ************************************************************'************************
+// ************************************************************************************
 
 // ConstrutorFuncionario
-Funcionario f1 = new("diogo DE liMA SCARMAGNANI", 1230.00M);
-Funcionario f2 = new("diogo DE liMA SCARMAGNANI", 1230.00M);
-Funcionario f3 = new("diogo DE liMA SCARMAGNANI", 1230.00M);
-Funcionario f4 = new("diogo DE liMA SCARMAGNANI", 1230.00M);
-// var f1 = new Funcionario{
-//     Nome = "diogo DE liMA",
-//     Salario = 1230.00M
-// };
-// var f2 = new Funcionario{
-//     Nome = "diogo DE liMA",
-//     Salario = 1230.00M
-// };
-// var f3 = new Funcionario{
-//     Nome = "diogo DE liMA",
-//     Salario = 1230.00M
-// };
+Console.WriteLine("--------------------- CADASTRO DE FUNCIONÁRIOS ---------------------");
 
-f1.MostrarDados();
-f2.MostrarDados();
-f3.MostrarDados();
+// Declarando lista, ao invés de array, para deixar o tamanho indefinido.
+List<Funcionario> vetF = new();
+
+// Instanciando os funcionários, em duas formas diferentes.
+vetF.Add(new Funcionario{
+    Nome = "diogo DE liMA SCARMAGNANI",
+    Salario = 1500M
+});
+vetF.Add(new("   Linus   benEDICt TORVALDS ", 4890.4M));
+vetF.Add(new("GIOVANA ANGELICA R. MIOLA", 7500M));
+
+// Quantidade atual de funcionários cadastrados (instâncias).
+int atualCount = Funcionario.Contador;
+
+Console.WriteLine($"\n{atualCount} funcionários cadastrados com sucesso:");
+foreach (var item in vetF)
+{
+    item.MostrarDados();
+}
+
+Console.Write("\nInforme o percentual de reajuste salarial\n(se precisar, separe casa decimal com vírgula): ");
+decimal reajuste = decimal.Parse(Console.ReadLine());
+reajuste /= 100;
+foreach (var item in vetF)
+{
+    item.ReajustarSalario(reajuste);
+}
+
+Console.WriteLine($"\nSalários reajustados em {reajuste:P}:");
+foreach (var item in vetF)
+{
+    item.MostrarDados();
+}
 
 // ************************************************************************************
 
