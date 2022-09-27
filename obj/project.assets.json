@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\diogo.scarmagnani\\.nuget\\packages\\": {}
+    "/home/diogo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\OOP_CSharp.csproj",
+      "projectUniqueName": "/home/diogo/Documents/OOP_CSharp/OOP_CSharp.csproj",
       "projectName": "OOP_CSharp",
-      "projectPath": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\OOP_CSharp.csproj",
-      "packagesPath": "C:\\Users\\diogo.scarmagnani\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\diogo\\faculdade\\OOP_CSharp\\obj\\",
+      "projectPath": "/home/diogo/Documents/OOP_CSharp/OOP_CSharp.csproj",
+      "packagesPath": "/home/diogo/.nuget/packages/",
+      "outputPath": "/home/diogo/Documents/OOP_CSharp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\diogo.scarmagnani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/diogo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.109/sdk/6.0.109/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,27 +14,35 @@ namespace OOP_CSharp.ConstrutorFuncionario
 
         // static Funcionario()
         // {
-        //     Codigo = 100;
+        //     Codigo++;
         // }
         public Funcionario()
         {
-            Codigo = Codigo;
+            CodigoCount++;
+            Codigo = CodigoCount;
         }
         public Funcionario(string nome, decimal salario)
         {
-            Codigo = Codigo;
+            CodigoCount++;
+            Codigo = CodigoCount;
             Nome = nome;
             Salario = salario;
         }
 
         private static int s_codigo = 100;
+        private static int s_codigoCount = 100;
         private string _nome;
         private decimal _salario;
 
+        public static int CodigoCount
+        {
+            get => s_codigoCount;
+            private set { s_codigoCount++; }
+        }
         public static int Codigo
         {
             get => s_codigo;
-            private set { s_codigo++; }
+            private set { s_codigo = s_codigoCount; }
         }
         public string Nome
         {
