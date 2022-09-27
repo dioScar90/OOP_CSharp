@@ -9,18 +9,23 @@ namespace OOP_CSharp.ConstrutorFuncionario
 {
     public class Funcionario
     {
+        static Funcionario()
+        {
+            Contador = Contador;
+            CodigoCount = 100;
+        }
         public Funcionario() // Construtor 1, sem parâmetros.
         {
             Contador = Contador;
 
-            CodigoCount = CodigoCount;
+            CodigoCount = 1;
             Codigo = CodigoCount;
         }
         public Funcionario(string nome, decimal salario) // Construtor 2, com parâmetros.
         {
             Contador = Contador;
 
-            CodigoCount = CodigoCount;
+            CodigoCount = 1;
             Codigo = CodigoCount;
 
             Nome = nome;
@@ -29,7 +34,7 @@ namespace OOP_CSharp.ConstrutorFuncionario
 
         private static int s_contador;
         private const decimal _salarioMinimo = 1212M;
-        private static int s_codigoCount = 100;
+        private static int s_codigoCount;
         private int _codigo;
         private string _nome;
         private decimal _salario;
@@ -42,7 +47,7 @@ namespace OOP_CSharp.ConstrutorFuncionario
         public static int CodigoCount
         {
             get => s_codigoCount;
-            private set { s_codigoCount++; }
+            private set { s_codigoCount += value; }
         }
         public int Codigo
         {

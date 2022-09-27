@@ -140,6 +140,7 @@ vetF.Add(new Funcionario{
     Nome = "diogo DE liMA SCARMAGNANI",
     Salario = 1500M
 });
+// vetF.Add(new("diogo DE liMA SCARMAGNANI", 1500M));
 vetF.Add(new("   Linus   benEDICt TORVALDS ", 4890.4M));
 vetF.Add(new("GIOVANA ANGELICA R. MIOLA", 7500M));
 
