@@ -6,6 +6,9 @@
 using OOP_CSharp.ConstrutorFuncionario;
 // using OOP_CSharp.EncapsulamentoConta;
 // using OOP_CSharp.EncapsulamentoFuncionario;
+// using OOP_CSharp.Models.AgregacaoConta;
+// using OOP_CSharp.Models.AgregacaoArrayConta;
+
 using System.Globalization;
 
 // Definindo a cultura local do Brasil. Útil no momento de formatar a moeda.
@@ -185,7 +188,6 @@ foreach (var item in vetF)
 // ************************************************************************************
 
 // // EncapsulamentoFuncionario
-// /*
 // Funcionario f1 = new Funcionario();
 // f1.Codigo = 10; //utilizou o set, simbologia de recebe = utiliza o set, tem atribuição
 // Console.WriteLine("Código: " + f1.Codigo); //get, qndo está mostrando, está fazendo o get
@@ -212,6 +214,50 @@ foreach (var item in vetF)
 // f2.MostrarAtributos();
 
 // ************************************************************************************
+
+// // AgregacaoConta
+// Cliente cliente = new();
+// cliente.Nome = "Ana";
+// cliente.CPF = "123";
+// cliente.RG = "11";
+
+// Conta c1 = new();
+// c1.NumeroConta = 1;
+// c1.Saldo = 100M;
+// c1.Titular = cliente;
+
+// Conta c2 = new();
+// c2.NumeroConta = 1;
+// c2.Saldo = 100M;
+// c2.Titular = new Cliente();
+// c2.Titular.Nome = "Bia";
+// c2.Titular.CPF = "345";
+// c2.Titular.RG = "76";
+
+// Console.WriteLine($"Nome: {c1.Titular.Nome}");
+// Console.WriteLine($"Nome: {c2.Titular.Nome}");
+
+// ************************************************************************************
+
+// // AgregacaoArrayConta
+// Cliente cliente1 = new("Ana", "123", "11");
+// Cliente cliente2 = new("Bia", "345", "76");
+
+// Conta c1 = new();
+// c1.NumeroConta = 1;
+// c1.Saldo = 1000M;
+// c1.VetTitular = new List<Cliente>();
+// c1.VetTitular.Add(cliente1);
+
+// Conta c2 = new();
+// c2.NumeroConta = 1;
+// c2.Saldo = 100M;
+// c1.VetTitular.Add(cliente2);
+
+// foreach (var item in c1.VetTitular)
+// {
+//     Console.WriteLine($"Nome: {item.Nome}");
+// }
 
 // ************************************************************************************
 
