@@ -3,11 +3,12 @@
 // using OOP_CSharp.ClasseConta;
 // using OOP_CSharp.ClasseFuncionario;
 // using OOP_CSharp.ConstrutorConta;
-using OOP_CSharp.ConstrutorFuncionario;
+// using OOP_CSharp.ConstrutorFuncionario;
 // using OOP_CSharp.EncapsulamentoConta;
 // using OOP_CSharp.EncapsulamentoFuncionario;
 // using OOP_CSharp.Models.AgregacaoConta;
 // using OOP_CSharp.Models.AgregacaoArrayConta;
+using OOP_CSharp.Models.AgregacaoVenda;
 
 using System.Globalization;
 
@@ -133,42 +134,42 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ************************************************************************************
 
 // ConstrutorFuncionario
-Console.WriteLine("--------------------- CADASTRO DE FUNCIONÁRIOS ---------------------");
+// Console.WriteLine("--------------------- CADASTRO DE FUNCIONÁRIOS ---------------------");
 
 // Declarando lista, ao invés de array, para deixar o tamanho indefinido.
-List<Funcionario> vetF = new();
+// List<Funcionario> vetF = new();
 
 // Instanciando os funcionários, em duas formas diferentes.
-vetF.Add(new Funcionario{
-    Nome = "diogo DE liMA SCARMAGNANI",
-    Salario = 1500M
-});
+// vetF.Add(new Funcionario{
+//     Nome = "diogo DE liMA SCARMAGNANI",
+//     Salario = 1500M
+// });
 // vetF.Add(new("diogo DE liMA SCARMAGNANI", 1500M));
-vetF.Add(new("   Linus   benEDICt TORVALDS ", 4890.4M));
-vetF.Add(new("GIOVANA ANGELICA R. MIOLA", 7500M));
+// vetF.Add(new("   Linus   benEDICt TORVALDS ", 4890.4M));
+// vetF.Add(new("GIOVANA ANGELICA R. MIOLA", 7500M));
 
 // Quantidade atual de funcionários cadastrados (instâncias).
-int atualCount = Funcionario.Contador;
+// int atualCount = Funcionario.Contador;
 
-Console.WriteLine($"\n{atualCount} funcionários cadastrados com sucesso:");
-foreach (var item in vetF)
-{
-    item.MostrarDados();
-}
+// Console.WriteLine($"\n{atualCount} funcionários cadastrados com sucesso:");
+// foreach (var item in vetF)
+// {
+//     item.MostrarDados();
+// }
 
-Console.Write("\nInforme o percentual de reajuste salarial\n(se precisar, separe casa decimal com vírgula): ");
-decimal reajuste = decimal.Parse(Console.ReadLine());
-reajuste /= 100;
-foreach (var item in vetF)
-{
-    item.ReajustarSalario(reajuste);
-}
+// Console.Write("\nInforme o percentual de reajuste salarial\n(se precisar, separe casa decimal com vírgula): ");
+// decimal reajuste = decimal.Parse(Console.ReadLine());
+// reajuste /= 100;
+// foreach (var item in vetF)
+// {
+//     item.ReajustarSalario(reajuste);
+// }
 
-Console.WriteLine($"\nSalários reajustados em {reajuste:P}:");
-foreach (var item in vetF)
-{
-    item.MostrarDados();
-}
+// Console.WriteLine($"\nSalários reajustados em {reajuste:P2}:");
+// foreach (var item in vetF)
+// {
+//     item.MostrarDados();
+// }
 
 // ************************************************************************************
 
@@ -258,6 +259,10 @@ foreach (var item in vetF)
 // {
 //     Console.WriteLine($"Nome: {item.Nome}");
 // }
+
+// ************************************************************************************
+
+// AgregacaoVenda
 
 // ************************************************************************************
 
