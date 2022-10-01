@@ -10,13 +10,19 @@ namespace OOP_CSharp.Models.AgregacaoVenda
         private decimal _verba;
         public decimal Verba
         {
-            get { return _verba; }
+            get => _verba;
             set { _verba = value; }
+        }
+
+        public Comprador(decimal verba)
+        {
+            Verba = verba;
         }
         
         public void MostrarAtributos()
         {
-            
+            Console.WriteLine(
+                $"Verba: {Verba:C2}");
         }
     }
 }

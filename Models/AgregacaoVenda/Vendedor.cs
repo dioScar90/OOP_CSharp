@@ -10,13 +10,19 @@ namespace OOP_CSharp.Models.AgregacaoVenda
         private decimal _comissao;
         public decimal Comissao
         {
-            get { return _comissao; }
+            get => _comissao;
             set { _comissao = value; }
+        }
+
+        public Vendedor(decimal comissao)
+        {
+            Comissao = Comissao;
         }
         
         public void MostrarAtributos()
         {
-            //
+            Console.WriteLine(
+                $"Comissão: {Comissao}");
         }
     }
 }

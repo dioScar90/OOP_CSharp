@@ -10,25 +10,27 @@ namespace OOP_CSharp.Models.AgregacaoVenda
         private Comprador _comprador;
         public Comprador Comprador
         {
-            get { return _comprador; }
+            get => _comprador;
             set { _comprador = value; }
         }
         private Vendedor _vendedor;
         public Vendedor Vendedor
         {
-            get { return _vendedor; }
+            get => _vendedor;
             set { _vendedor = value; }
         }
         private List<Produto> _vet_produto;
         public List<Produto> VetProduto
         {
-            get { return _vet_produto; }
+            get => _vet_produto;
             set { _vet_produto = value; }
         }
 
-        public Venda()
+        public Venda(Comprador comprador, Vendedor vendedor, List<Produto> vetProduto)
         {
-            
+            Comprador = comprador;
+            Vendedor = vendedor;
+            VetProduto = vetProduto;
         }
         
         public void MostrarAtributos()

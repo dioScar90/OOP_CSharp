@@ -263,6 +263,26 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ************************************************************************************
 
 // AgregacaoVenda
+Comprador comp = new Comprador(10000M);
+Vendedor diogo;
+Vendedor giovana;
+Vendedor linus;
+List<Produto> prod = new();
+prod.Add(new Produto("Módulo Amp TS 0400", 257.99M));
+prod.Add(new Produto("Módulo Amp HD 3000", 647.9M));
+prod.Add(new Produto("Módulo Amp DS 0800", 527.99M));
+prod.Add(new Produto("Módulo Amp TI 1500", 275.08M));
+prod.Add(new Produto("Módulo Amp TI 0500", 109.99M));
+prod.Add(new Produto("Módulo Amp MD 1200", 672.25M));
+prod.Add(new Produto("Pro Charger 60a BV", 419.9M));
+
+Venda venda1 = new(comp, diogo = new(prod[3].Preco), prod);
+
+comp.MostrarAtributos();
+foreach(var item in prod)
+{
+    item.MostrarAtributos();
+}
 
 // ************************************************************************************
 
