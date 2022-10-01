@@ -40,9 +40,9 @@ namespace OOP_CSharp.Models.AgregacaoVenda
         public Produto(string nome, decimal preco)
         {
             CodigoCount = 1;
-            Codigo = CodigoCount;
-            Nome = nome;
-            Preco = preco;
+            this.Codigo = CodigoCount;
+            this.Nome = nome;
+            this.Preco = preco;
         }
         
         public void MostrarAtributos()

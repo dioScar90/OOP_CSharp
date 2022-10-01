@@ -263,26 +263,48 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ************************************************************************************
 
 // AgregacaoVenda
-Comprador comp = new Comprador(10000M);
-Vendedor diogo;
-Vendedor giovana;
-Vendedor linus;
-List<Produto> prod = new();
-prod.Add(new Produto("Módulo Amp TS 0400", 257.99M));
-prod.Add(new Produto("Módulo Amp HD 3000", 647.9M));
-prod.Add(new Produto("Módulo Amp DS 0800", 527.99M));
-prod.Add(new Produto("Módulo Amp TI 1500", 275.08M));
-prod.Add(new Produto("Módulo Amp TI 0500", 109.99M));
-prod.Add(new Produto("Módulo Amp MD 1200", 672.25M));
-prod.Add(new Produto("Pro Charger 60a BV", 419.9M));
+Console.WriteLine("---------------- SISTEMA PARA CADASTRO DE VENDA ----------------");
 
-Venda venda1 = new(comp, diogo = new(prod[3].Preco), prod);
+Comprador comprador = new Comprador(10000M);
 
-comp.MostrarAtributos();
-foreach(var item in prod)
+Console.WriteLine($"\nIniciando cadastro da venda. Verba do comprador: {comprador.Verba:C2}.");
+
+List<Produto> produtos = new List<Produto>();
+produtos.Add(new Produto("Módulo Amp TS 0400", 257.99M));
+produtos.Add(new Produto("Módulo Amp HD 3000", 647.9M));
+produtos.Add(new Produto("Módulo Amp DS 0800", 527.99M));
+produtos.Add(new Produto("Módulo Amp TI 1500", 275.08M));
+produtos.Add(new Produto("Módulo Amp TI 0500", 109.99M));
+produtos.Add(new Produto("Módulo Amp MD 1200", 672.25M));
+produtos.Add(new Produto("Pro Charger 60a BV", 419.9M));
+
+List<Produto> produtosDaVenda = new List<Produto>();
+List<int> aux = new List<int>();
+decimal valorTotalProdutos = 0;
+Console.WriteLine("\nLista de produtos:");
+foreach (var item in produtos)
 {
+    aux.Add(item.Codigo);
     item.MostrarAtributos();
 }
+Console.WriteLine("\nEscolha quantos e quais produtos serão incluídos nessa venda:");
+Console.Write("Quantidade de produtos: ");
+int qtdeProdutos = int.Parse(Console.ReadLine());
+Console.WriteLine($"Escreva os CÓDIGOS dos {qtdeProdutos} produtos:");
+for (int i = 1; i <= qtdeProdutos; i++)
+{
+    Console.Write($"Produto {i}: ");
+    int codigo = int.Parse(Console.ReadLine());
+    int idx = aux.IndexOf(codigo);
+    produtosDaVenda.Add(produtos[idx]);
+    valorTotalProdutos += produtos[idx].Preco;
+}
+
+Vendedor vendedor = new(valorTotalProdutos);
+Venda venda1 = new(comprador, vendedor, produtosDaVenda);
+
+Console.WriteLine($"\nSegue abaixo os detalhes da venda:");
+venda1.MostrarAtributos();
 
 // ************************************************************************************
 

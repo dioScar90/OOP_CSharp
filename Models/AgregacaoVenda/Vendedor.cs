@@ -11,18 +11,18 @@ namespace OOP_CSharp.Models.AgregacaoVenda
         public decimal Comissao
         {
             get => _comissao;
-            set { _comissao = value; }
+            set { _comissao = value * 2 / 100; }
         }
 
         public Vendedor(decimal comissao)
         {
-            Comissao = Comissao;
+            this.Comissao = comissao;
         }
         
         public void MostrarAtributos()
         {
             Console.WriteLine(
-                $"Comissão: {Comissao}");
+                $"Comissão: {Comissao:C2}");
         }
     }
 }

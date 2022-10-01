@@ -16,7 +16,7 @@ namespace OOP_CSharp.Models.AgregacaoVenda
 
         public Comprador(decimal verba)
         {
-            Verba = verba;
+            this.Verba = verba;
         }
         
         public void MostrarAtributos()
