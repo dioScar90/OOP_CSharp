@@ -265,7 +265,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // AgregacaoVenda
 Console.WriteLine("---------------- SISTEMA PARA CADASTRO DE VENDA ----------------");
 
-Comprador comprador = new Comprador(10000M);
+Comprador comprador = new Comprador(5000M);
 
 Console.WriteLine($"\nIniciando cadastro da venda. Verba do comprador: {comprador.Verba:C2}.");
 
