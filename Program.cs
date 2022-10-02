@@ -278,9 +278,11 @@ produtos.Add(new Produto("Módulo Amp TI 0500", 109.99M));
 produtos.Add(new Produto("Módulo Amp MD 1200", 672.25M));
 produtos.Add(new Produto("Pro Charger 60a BV", 419.9M));
 
+decimal summer = produtos.Sum(item => item.Preco);
+Console.WriteLine(summer);
+
 List<Produto> produtosDaVenda = new List<Produto>();
 List<int> aux = new List<int>();
-decimal valorTotalProdutos = 0;
 Console.WriteLine("\nLista de produtos:");
 foreach (var item in produtos)
 {
@@ -297,9 +299,9 @@ for (int i = 1; i <= qtdeProdutos; i++)
     int codigo = int.Parse(Console.ReadLine());
     int idx = aux.IndexOf(codigo);
     produtosDaVenda.Add(produtos[idx]);
-    valorTotalProdutos += produtos[idx].Preco;
 }
 
+decimal valorTotalProdutos = produtosDaVenda.Sum(item => item.Preco);
 Vendedor vendedor = new(valorTotalProdutos);
 Venda venda1 = new(comprador, vendedor, produtosDaVenda);
 
