@@ -278,9 +278,6 @@ produtos.Add(new Produto("Módulo Amp TI 0500", 109.99M));
 produtos.Add(new Produto("Módulo Amp MD 1200", 672.25M));
 produtos.Add(new Produto("Pro Charger 60a BV", 419.9M));
 
-decimal summer = produtos.Sum(item => item.Preco);
-Console.WriteLine(summer);
-
 List<Produto> produtosDaVenda = new List<Produto>();
 List<int> aux = new List<int>();
 Console.WriteLine("\nLista de produtos:");
