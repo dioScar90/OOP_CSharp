@@ -56,9 +56,8 @@ namespace OOP_CSharp.Models.AgregacaoVenda
             Comprador.Verba -= valorTotal;
 
             Console.WriteLine($"Total da venda: {valorTotal:C2}.");
-            Console.WriteLine($"Comissão ao vendedor: {Vendedor.Comissao:C}.");
-            Console.WriteLine($"Saldo final do comprador: {Comprador.Verba:C}.");
-
+            Console.WriteLine($"Comissão ao vendedor: {Vendedor.Comissao:C2}.");
+            Console.WriteLine($"Saldo final do comprador: {Comprador.Verba:C2}.");
         }
     }
 }
