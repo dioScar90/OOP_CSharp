@@ -8,7 +8,8 @@
 // using OOP_CSharp.EncapsulamentoFuncionario;
 // using OOP_CSharp.Models.AgregacaoConta;
 // using OOP_CSharp.Models.AgregacaoArrayConta;
-using OOP_CSharp.Models.AgregacaoVenda;
+// using OOP_CSharp.Models.AgregacaoVenda;
+using OOP_CSharp.Models.ComposicaoNotaFiscal;
 
 using System.Globalization;
 
@@ -17,54 +18,104 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
-// AgregacaoVenda
-Console.WriteLine("---------------- SISTEMA PARA CADASTRO DE VENDA ----------------");
+// ComposicaoNotaFiscal.
+ItemNotaFiscal it1 = new(20);
+ItemNotaFiscal it2 = new(30);
 
-Comprador comprador = new Comprador(5000M);
+List<ItemNotaFiscal> itens = new();
+itens.Add(it1);
+itens.Add(it2);
 
-Console.WriteLine($"\nIniciando cadastro da venda. Verba do comprador: {comprador.Verba:C2}.");
+NotaFiscal nf = new(1, new DateOnly(2022, 10, 19), itens);
 
-var produtos = new List<Produto> {
-    new Produto("Módulo Amp TS 0400", 257.99M),
-    new Produto("Módulo Amp HD 3000", 647.9M),
-    new Produto("Módulo Amp DS 0800", 527.99M),
-    new Produto("Módulo Amp TI 1500", 275.08M),
-    new Produto("Módulo Amp TI 0500", 109.99M),
-    new Produto("Módulo Amp MD 1200", 672.25M),
-    new Produto("Pro Charger 60a BV", 419.9M)
-};
+//Destruindo um objeto.
+nf = null;
+// Coletar da memória objetos inutilizados. Essa parte não é necessária,
+// o próprio sistema já faz isso de tempos em tempos, porém pode ser
+// forçada com o método abaixo caso o usuário queira.
+GC.Collect();
 
-List<Produto> produtosDaVenda = new List<Produto>();
-List<int> aux = new List<int>();
-Console.WriteLine("\nLista de produtos:");
-foreach (var item in produtos)
-{
-    aux.Add(item.Codigo);
-    item.MostrarAtributos();
-}
+Console.ReadKey();
 
-Console.WriteLine("\nEscolha quantos e quais produtos serão incluídos nessa venda:");
-Console.Write("Quantidade de produtos: ");
-int.TryParse(Console.ReadLine(), out int qtdeProdutos);
 
-Console.WriteLine($"Escreva os CÓDIGOS dos {qtdeProdutos} produtos:");
-for (int i = 1; i <= qtdeProdutos; i++)
-{
-    Console.Write($"Produto {i}: ");
-    int.TryParse(Console.ReadLine(), out int codigo);
-    int idx = aux.IndexOf(codigo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // AgregacaoVenda
+// Console.WriteLine("---------------- SISTEMA PARA CADASTRO DE VENDA ----------------");
+
+// Comprador comprador = new Comprador(5000M);
+
+// Console.WriteLine($"\nIniciando cadastro da venda. Verba do comprador: {comprador.Verba:C2}.");
+
+// var produtos = new List<Produto> {
+//     new Produto("Módulo Amp TS 0400", 257.99M),
+//     new Produto("Módulo Amp HD 3000", 647.9M),
+//     new Produto("Módulo Amp DS 0800", 527.99M),
+//     new Produto("Módulo Amp TI 1500", 275.08M),
+//     new Produto("Módulo Amp TI 0500", 109.99M),
+//     new Produto("Módulo Amp MD 1200", 672.25M),
+//     new Produto("Pro Charger 60a BV", 419.9M)
+// };
+
+// List<Produto> produtosDaVenda = new List<Produto>();
+// List<int> aux = new List<int>();
+// Console.WriteLine("\nLista de produtos:");
+// foreach (var item in produtos)
+// {
+//     aux.Add(item.Codigo);
+//     item.MostrarAtributos();
+// }
+
+// Console.WriteLine("\nEscolha quantos e quais produtos serão incluídos nessa venda:");
+// Console.Write("Quantidade de produtos: ");
+// int.TryParse(Console.ReadLine(), out int qtdeProdutos);
+
+// Console.WriteLine($"Escreva os CÓDIGOS dos {qtdeProdutos} produtos:");
+// for (int i = 1; i <= qtdeProdutos; i++)
+// {
+//     Console.Write($"Produto {i}: ");
+//     int.TryParse(Console.ReadLine(), out int codigo);
+//     int idx = aux.IndexOf(codigo);
     
-    if (idx > 0)
-        produtosDaVenda.Add(produtos[idx]);
-}
-produtosDaVenda = produtosDaVenda.OrderBy(item => item.Codigo).ToList();
+//     if (idx > 0)
+//         produtosDaVenda.Add(produtos[idx]);
+// }
+// produtosDaVenda = produtosDaVenda.OrderBy(item => item.Codigo).ToList();
 
-decimal valorTotalProdutos = produtosDaVenda.Sum(item => item.Preco);
-Vendedor vendedor = new(valorTotalProdutos);
-Venda venda1 = new(comprador, vendedor, produtosDaVenda);
+// decimal valorTotalProdutos = produtosDaVenda.Sum(item => item.Preco);
+// Vendedor vendedor = new(valorTotalProdutos);
+// Venda venda1 = new(comprador, vendedor, produtosDaVenda);
 
-Console.WriteLine($"\nSegue abaixo os detalhes da venda:");
-venda1.MostrarAtributos();
+// Console.WriteLine($"\nSegue abaixo os detalhes da venda:");
+// venda1.MostrarAtributos();
 
 
 
