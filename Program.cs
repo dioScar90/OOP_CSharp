@@ -9,7 +9,8 @@
 // using OOP_CSharp.Models.AgregacaoConta;
 // using OOP_CSharp.Models.AgregacaoArrayConta;
 // using OOP_CSharp.Models.AgregacaoVenda;
-using OOP_CSharp.Models.ComposicaoNotaFiscal;
+// using OOP_CSharp.Models.ComposicaoNotaFiscal;
+using OOP_CSharp.Models.ComposicaoBanco;
 
 using System.Globalization;
 
@@ -18,24 +19,56 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
-// ComposicaoNotaFiscal.
-ItemNotaFiscal it1 = new(20);
-ItemNotaFiscal it2 = new(30);
+// ComposicaoBanco.
 
-List<ItemNotaFiscal> itens = new();
-itens.Add(it1);
-itens.Add(it2);
 
-NotaFiscal nf = new(1, new DateOnly(2022, 10, 19), itens);
 
-//Destruindo um objeto.
-nf = null;
-// Coletar da memória objetos inutilizados. Essa parte não é necessária,
-// o próprio sistema já faz isso de tempos em tempos, porém pode ser
-// forçada com o método abaixo caso o usuário queira.
-GC.Collect();
 
-Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // ComposicaoNotaFiscal.
+// ItemNotaFiscal it1 = new(20);
+// ItemNotaFiscal it2 = new(30);
+
+// List<ItemNotaFiscal> itens = new();
+// itens.Add(it1);
+// itens.Add(it2);
+
+// NotaFiscal nf = new(1, new DateOnly(2022, 10, 19), itens);
+
+// //Destruindo um objeto.
+// nf = null;
+// // Coletar da memória objetos inutilizados. Essa parte não é necessária,
+// // o próprio sistema já faz isso de tempos em tempos, porém pode ser
+// // forçada com o método abaixo caso o usuário queira.
+// GC.Collect();
+
+// Console.ReadKey();
 
 
 
