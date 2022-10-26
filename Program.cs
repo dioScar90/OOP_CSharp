@@ -10,7 +10,8 @@
 // using OOP_CSharp.Models.AgregacaoArrayConta;
 // using OOP_CSharp.Models.AgregacaoVenda;
 // using OOP_CSharp.Models.ComposicaoNotaFiscal;
-using OOP_CSharp.Models.ComposicaoBanco;
+// using OOP_CSharp.Models.ComposicaoBanco;
+using OOP_CSharp.Models.HerancaCliente;
 
 using System.Globalization;
 
@@ -19,8 +20,37 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
-// ComposicaoBanco.
+// HerancaCliente
+Cliente c = new() {
+    Codigo = 1,
+    Nome = "Ana",
+    Endereco = "Rua Jose Ferrucci Longo, 87"
+};
 
+ClienteFisico cf = new() {
+    Codigo = 2,
+    Nome = "Bia",
+    Endereco = "Rua da Saudade, 189",
+    RG = 100,
+    CPF = 1000
+};
+
+ClienteJuridico cj = new() {
+    Codigo = 3,
+    Nome = "Chuchu & Cia.",
+    Endereco = "Rua Terezinha, 200",
+    CNPJ = 30,
+    IE = 300
+};
+
+Cliente c2 = new(4, "Leo", "Rua Três");
+c2.Mostrar();
+
+ClienteFisico cf2 = new(5, "Lia", "Rua Quatro", 5500, 5555);
+cf2.Mostrar();
+
+ClienteJuridico cj2 = new(6, "Nubank", "Rua Limão", 600, 6000);
+cj2.Mostrar();
 
 
 
