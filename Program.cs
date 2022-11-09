@@ -12,7 +12,8 @@
 // using OOP_CSharp.Models.ComposicaoNotaFiscal;
 // using OOP_CSharp.Models.ComposicaoBanco;
 // using OOP_CSharp.Models.HerancaCliente;
-using OOP_CSharp.Models.AbstratoCliente;
+// using OOP_CSharp.Models.AbstratoCliente;
+using OOP_CSharp.Models.AbstratoDepartamento;
 
 using System.Globalization;
 
@@ -21,24 +22,70 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
-// AbstratoCliente
-// Não pode ser instanciado um objeto de uma classe abstract.
-// Cliente c = new();
-ClienteFisico cf = new(1, "Diogo", 20, 123);
-cf.Mostrar();
-cf.VerificarIdade();
+// AbstratoDepartamento
+Assalariado a1 = new(1, "Linus Torvalds", 10000M);
+Assalariado a2 = new(2, "Dennis Ritchie", 11000M);
 
-ClienteJuridico cj = new(2, "Microsoft", 60, 100);
-cj.Mostrar();
-cj.VerificarIdade();
+Comissionado c1 = new(3, "Leo", 10000M, 0.20M);
+Comissionado c2 = new(4, "Teo", 12000M, 0.30M);
 
-Console.WriteLine();
+c1.MostrarDados();
 
-Teste t1 = new();
-t1.VerificarIdadeClasses(cf);
+Departamento d1 = new(10, "T.I.");
+Departamento d2 = new(11, "R.H.");
 
-Teste t2 = new();
-t2.VerificarIdadeClasses(cj);
+d1.VetF = new List<Funcionario>();
+d1.AdicionarFuncionario(a1);
+d1.AdicionarFuncionario(c1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // AbstratoCliente
+// // Não pode ser instanciado um objeto de uma classe abstract.
+// // Cliente c = new();
+// ClienteFisico cf = new(1, "Diogo", 20, 123);
+// cf.Mostrar();
+// cf.VerificarIdade();
+
+// ClienteJuridico cj = new(2, "Microsoft", 60, 100);
+// cj.Mostrar();
+// cj.VerificarIdade();
+
+// Console.WriteLine();
+
+// Teste t1 = new();
+// t1.VerificarIdadeClasses(cf);
+
+// Teste t2 = new();
+// t2.VerificarIdadeClasses(cj);
 
 
 
