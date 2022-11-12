@@ -49,6 +49,33 @@ Console.WriteLine($"\nDepartamento: {d2.Descricao}\nTotal da folha de pagamento:
 d1.DemitirFuncionario(1);
 d1.ListarFuncionarios();
 
+var dep1 = new Dependente(1, "Enzo Ferreira", 12);
+var dep2 = new Dependente(2, "Neymar Ferreira", 8);
+var dep3 = new Dependente(4, "Joaquim Ferreira", 19);
+var dep4 = new Dependente(3, "Valentina Ferreira", 15);
+
+a1.VetDependentes = new List<Dependente>();
+Console.WriteLine("Lista após ainda não ter adicionado nenhum dependenete.");
+
+a1.AdicionarDependente(dep1);
+a1.AdicionarDependente(dep2);
+a1.AdicionarDependente(dep3);
+a1.AdicionarDependente(dep4);
+
+Console.WriteLine("Lista sem ter removido dependentes maiores de idade.");
+a1.ListarDependentes();
+
+for (int i = 0; i < a1.VetDependentes.Count(); i++)
+{
+    if (a1.VetDependentes[i].VerificaMaioridade())
+    {
+        a1.RemoverDependenteMaioridade(a1.VetDependentes[i].Codigo);
+    }
+}
+Console.WriteLine("Lista após ter removido dependentes maiores de idade.");
+a1.ListarDependentes();
+
+
 
 
 

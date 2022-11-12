@@ -20,6 +20,16 @@ namespace OOP_CSharp.Models.AbstratoDepartamento
             VetF.Add(funcionario);
         }
 
+        public void DemitirFuncionario(int codigo)
+        {
+            for (int i = 0; i < VetF.Count(); i++)
+            {
+                Funcionario f = VetF.ElementAt<Funcionario>(i);
+                if (f.Codigo == codigo)
+                    VetF.Remove(f);
+            }
+        }
+
         public void ListarFuncionarios()
         {
             Console.WriteLine("\nListagem de funcionários....................................:");
@@ -38,16 +48,6 @@ namespace OOP_CSharp.Models.AbstratoDepartamento
                 folha += f.CalcularSalario(diasUteis);
             }
             return folha;
-        }
-
-        public void DemitirFuncionario(int codigo)
-        {
-            for (int i = 0; i < VetF.Count(); i++)
-            {
-                Funcionario f = VetF.ElementAt<Funcionario>(i);
-                if (f.Codigo == codigo)
-                    VetF.Remove(f);
-            }
         }
     }
 }
