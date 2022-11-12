@@ -23,20 +23,31 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 // ************************************************************************************
 
 // AbstratoDepartamento
-Assalariado a1 = new(1, "Linus Torvalds", 10000M);
-Assalariado a2 = new(2, "Dennis Ritchie", 11000M);
+var a1 = new Assalariado(1, "Linus Torvalds", 10000M);
+var a2 = new Assalariado(2, "Dennis Ritchie", 11000M);
 
-Comissionado c1 = new(3, "Leo", 10000M, 0.20M);
-Comissionado c2 = new(4, "Teo", 12000M, 0.30M);
+var c1 = new Comissionado(3, "Leo Stratovarius", 10000M, 0.20M);
+var c2 = new Comissionado(4, "Teo Sabaton", 12000M, 0.30M);
 
-c1.MostrarDados();
-
-Departamento d1 = new(10, "T.I.");
-Departamento d2 = new(11, "R.H.");
+var d1 = new Departamento(10, "T.I.");
+var d2 = new Departamento(11, "R.H.");
 
 d1.VetF = new List<Funcionario>();
-d1.AdicionarFuncionario(a1);
-d1.AdicionarFuncionario(c1);
+d1.AdmitirFuncionario(a1);
+d1.AdmitirFuncionario(c1);
+
+d2.VetF = new List<Funcionario>();
+d2.AdmitirFuncionario(a2);
+d2.AdmitirFuncionario(c2);
+
+d1.ListarFuncionarios();
+d2.ListarFuncionarios();
+
+Console.WriteLine($"\nDepartamento: {d1.Descricao}\nTotal da folha de pagamento: {d1.CalcularFolhaPagamento(30):C}");
+Console.WriteLine($"\nDepartamento: {d2.Descricao}\nTotal da folha de pagamento: {d2.CalcularFolhaPagamento(15):C}");
+
+d1.DemitirFuncionario(1);
+d1.ListarFuncionarios();
 
 
 

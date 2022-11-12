@@ -15,9 +15,39 @@ namespace OOP_CSharp.Models.AbstratoDepartamento
             Codigo = codigo;
             Descricao = descricao;
         }
-        public void AdicionarFuncionario(Funcionario funcionario)
+        public void AdmitirFuncionario(Funcionario funcionario)
         {
             VetF.Add(funcionario);
+        }
+
+        public void ListarFuncionarios()
+        {
+            Console.WriteLine("\nListagem de funcionários....................................:");
+            foreach (var funcionario in VetF)
+            {
+                funcionario.MostrarDados();
+            }
+        }
+
+        public decimal CalcularFolhaPagamento(int diasUteis)
+        {
+            decimal folha = 0;
+            for (int i = 0; i < VetF.Count(); i++)
+            {
+                Funcionario f = VetF.ElementAt<Funcionario>(i);
+                folha += f.CalcularSalario(diasUteis);
+            }
+            return folha;
+        }
+
+        public void DemitirFuncionario(int codigo)
+        {
+            for (int i = 0; i < VetF.Count(); i++)
+            {
+                Funcionario f = VetF.ElementAt<Funcionario>(i);
+                if (f.Codigo == codigo)
+                    VetF.Remove(f);
+            }
         }
     }
 }
