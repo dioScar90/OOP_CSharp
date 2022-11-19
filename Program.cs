@@ -14,7 +14,8 @@
 // using OOP_CSharp.Models.HerancaCliente;
 // using OOP_CSharp.Models.AbstratoCliente;
 // using OOP_CSharp.Models.AbstratoDepartamento;
-using OOP_CSharp.Models.InterfaceAutenticavel;
+// using OOP_CSharp.Models.InterfaceAutenticavel;
+using System.IO;
 
 using System.Globalization;
 
@@ -23,21 +24,113 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
+// TratamentoExcecao
+// // try
+// // {
+// //     // Isto causará uma exceção
+// //     File.OpenRead("//teste//ArquivoNãoExistente.txt");
+// // }
+// // catch (FileNotFoundException e)
+// // {
+// //     Console.WriteLine();
+// //     Console.WriteLine("Erro pelo FileNotFoundException");
+// //     Console.WriteLine("-------------------------------------");
+// //     Console.WriteLine(e.ToString());
+// //     Console.WriteLine();
+// // }
+// // catch (DirectoryNotFoundException e)
+// // {
+// //     Console.WriteLine();
+// //     Console.WriteLine("Erro pelo DirectoryNotFoundException");
+// //     Console.WriteLine("-------------------------------------");
+// //     Console.WriteLine(e.ToString());
+// //     Console.WriteLine();
+// // }
+// // catch (Exception e)
+// // {
+// //     Console.WriteLine();
+// //     Console.WriteLine("Erro pelo Exception");
+// //     Console.WriteLine("-------------------------------------");
+// //     Console.WriteLine(e.ToString());
+// //     Console.WriteLine();
+// // }
+
+// // int valor = -1;
+// // if (valor < 0)
+// // {
+// //     System.ArgumentException erro = new System.ArgumentException();
+// //     throw erro;
+// // }
+
+// int valor1 = 100, valor2 = 0, total = 0;
+// try
+// {
+//     total = valor1 / valor2;
+// }
+// catch (Exception ex) // Classe responsável pelo tipo de erro.
+// {
+//     // throw ex;
+//     // Console.WriteLine("Erro: Não pode ter divisão por zero. " + ex.Message);
+//     Console.WriteLine("Ocorreu uma exceção na rotina acima! " +
+//         "\n" + "Tipo Erro: " + ex.Message +
+//         "\n" + "Pilha de execução: " + ex.StackTrace +
+//         "\n" + "Informações do Sistema: " + ex.Source +
+//         "\n" + "Método: " + ex.TargetSite);
+// }
+// finally
+// {
+//     Console.WriteLine("Aqui é executado obrigatoriamente.\nExemplo: Fechar conexão com o DB.");
+// }
+
+// Console.WriteLine("Término do programa.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // InterfaceAutenticavel
 // Essa parte apenas copiei e colei, junto com os arquivos na model, pois faltei no dia (dor de cabeça).
-Gerente g = new Gerente();
-g.Senha = 101;
-Console.WriteLine("Autenticou? "+ g.Autenticar(100));
+// Gerente g = new Gerente();
+// g.Senha = 101;
+// Console.WriteLine("Autenticou? "+ g.Autenticar(100));
 
-Diretor d = new Diretor();
-d.Senha = 200;
-IAutenticavel id = d;
-Console.WriteLine("Autenticou? "+ id.Autenticar(200));
+// Diretor d = new Diretor();
+// d.Senha = 200;
+// IAutenticavel id = d;
+// Console.WriteLine("Autenticou? "+ id.Autenticar(200));
 
-Cliente c = new Cliente();
-c.Senha = 300;
-IAutenticavel ic = c;
-Console.WriteLine("Autenticou? "+ ic.Autenticar(300));
+// Cliente c = new Cliente();
+// c.Senha = 300;
+// IAutenticavel ic = c;
+// Console.WriteLine("Autenticou? "+ ic.Autenticar(300));
 
 
 
