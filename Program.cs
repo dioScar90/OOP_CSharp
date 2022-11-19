@@ -13,7 +13,8 @@
 // using OOP_CSharp.Models.ComposicaoBanco;
 // using OOP_CSharp.Models.HerancaCliente;
 // using OOP_CSharp.Models.AbstratoCliente;
-using OOP_CSharp.Models.AbstratoDepartamento;
+// using OOP_CSharp.Models.AbstratoDepartamento;
+using OOP_CSharp.Models.InterfaceAutenticavel;
 
 using System.Globalization;
 
@@ -22,58 +23,105 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 // ************************************************************************************
 
+// InterfaceAutenticavel
+// Essa parte apenas copiei e colei, junto com os arquivos na model, pois faltei no dia (dor de cabeça).
+Gerente g = new Gerente();
+g.Senha = 101;
+Console.WriteLine("Autenticou? "+ g.Autenticar(100));
+
+Diretor d = new Diretor();
+d.Senha = 200;
+IAutenticavel id = d;
+Console.WriteLine("Autenticou? "+ id.Autenticar(200));
+
+Cliente c = new Cliente();
+c.Senha = 300;
+IAutenticavel ic = c;
+Console.WriteLine("Autenticou? "+ ic.Autenticar(300));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // AbstratoDepartamento
-var a1 = new Assalariado(1, "Linus Torvalds", 10000M);
-var a2 = new Assalariado(2, "Dennis Ritchie", 11000M);
+// var a1 = new Assalariado(1, "Linus Torvalds", 10000M);
+// var a2 = new Assalariado(2, "Dennis Ritchie", 11000M);
 
-var c1 = new Comissionado(3, "Leo Stratovarius", 10000M, 0.20M);
-var c2 = new Comissionado(4, "Teo Sabaton", 12000M, 0.30M);
+// var c1 = new Comissionado(3, "Leo Stratovarius", 10000M, 0.20M);
+// var c2 = new Comissionado(4, "Teo Sabaton", 12000M, 0.30M);
 
-var d1 = new Departamento(10, "T.I.");
-var d2 = new Departamento(11, "R.H.");
+// var d1 = new Departamento(10, "T.I.");
+// var d2 = new Departamento(11, "R.H.");
 
-d1.VetF = new List<Funcionario>();
-d1.AdmitirFuncionario(a1);
-d1.AdmitirFuncionario(c1);
+// d1.VetF = new List<Funcionario>();
+// d1.AdmitirFuncionario(a1);
+// d1.AdmitirFuncionario(c1);
 
-d2.VetF = new List<Funcionario>();
-d2.AdmitirFuncionario(a2);
-d2.AdmitirFuncionario(c2);
+// d2.VetF = new List<Funcionario>();
+// d2.AdmitirFuncionario(a2);
+// d2.AdmitirFuncionario(c2);
 
-d1.ListarFuncionarios();
-d2.ListarFuncionarios();
+// d1.ListarFuncionarios();
+// d2.ListarFuncionarios();
 
-Console.WriteLine($"\nDepartamento: {d1.Descricao}\nTotal da folha de pagamento: {d1.CalcularFolhaPagamento(30):C}");
-Console.WriteLine($"\nDepartamento: {d2.Descricao}\nTotal da folha de pagamento: {d2.CalcularFolhaPagamento(15):C}");
+// Console.WriteLine($"\nDepartamento: {d1.Descricao}\nTotal da folha de pagamento: {d1.CalcularFolhaPagamento(30):C}");
+// Console.WriteLine($"\nDepartamento: {d2.Descricao}\nTotal da folha de pagamento: {d2.CalcularFolhaPagamento(15):C}");
 
-d1.DemitirFuncionario(1);
-d1.ListarFuncionarios();
+// d1.DemitirFuncionario(1);
+// d1.ListarFuncionarios();
 
-var dep1 = new Dependente(1, "Enzo Ferreira", 12);
-var dep2 = new Dependente(2, "Neymar Ferreira", 8);
-var dep3 = new Dependente(4, "Joaquim Ferreira", 19);
-var dep4 = new Dependente(3, "Valentina Ferreira", 15);
+// var dep1 = new Dependente(1, "Enzo Ferreira", 12);
+// var dep2 = new Dependente(2, "Neymar Ferreira", 8);
+// var dep3 = new Dependente(4, "Joaquim Ferreira", 19);
+// var dep4 = new Dependente(3, "Valentina Ferreira", 15);
 
-a1.VetDependentes = new List<Dependente>();
-Console.WriteLine("Lista após ainda não ter adicionado nenhum dependenete.");
+// a1.VetDependentes = new List<Dependente>();
+// Console.WriteLine("Lista após ainda não ter adicionado nenhum dependenete.");
 
-a1.AdicionarDependente(dep1);
-a1.AdicionarDependente(dep2);
-a1.AdicionarDependente(dep3);
-a1.AdicionarDependente(dep4);
+// a1.AdicionarDependente(dep1);
+// a1.AdicionarDependente(dep2);
+// a1.AdicionarDependente(dep3);
+// a1.AdicionarDependente(dep4);
 
-Console.WriteLine("Lista sem ter removido dependentes maiores de idade.");
-a1.ListarDependentes();
+// Console.WriteLine("Lista sem ter removido dependentes maiores de idade.");
+// a1.ListarDependentes();
 
-for (int i = 0; i < a1.VetDependentes.Count(); i++)
-{
-    if (a1.VetDependentes[i].VerificaMaioridade())
-    {
-        a1.RemoverDependenteMaioridade(a1.VetDependentes[i].Codigo);
-    }
-}
-Console.WriteLine("Lista após ter removido dependentes maiores de idade.");
-a1.ListarDependentes();
+// for (int i = 0; i < a1.VetDependentes.Count(); i++)
+// {
+//     if (a1.VetDependentes[i].VerificaMaioridade())
+//     {
+//         a1.RemoverDependenteMaioridade(a1.VetDependentes[i].Codigo);
+//     }
+// }
+// Console.WriteLine("Lista após ter removido dependentes maiores de idade.");
+// a1.ListarDependentes();
 
 
 
